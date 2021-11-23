@@ -18,7 +18,7 @@ public class SynchronizedBufferAction extends ResourceActionsAbstraction {
     @Override
     public void produceAction(int index) {
         buffer.produce(genRandData(), index);
-        WorkersCalculations.operations(optNumbCoeff);
+        WorkersCalculations.operations(optNumbCoeff/10 + 1);
     }
 
     @Override

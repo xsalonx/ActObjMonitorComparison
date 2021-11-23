@@ -22,7 +22,7 @@ public class ActiveObjectActions extends ResourceActionsAbstraction {
     @Override
     public void produceAction(int index) {
         proxy.putData(genRandData(), index);
-        WorkersCalculations.operations(optNumbCoeff);
+        WorkersCalculations.operations(optNumbCoeff/10 + 1);
     }
 
     @Override
